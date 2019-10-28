@@ -9,9 +9,11 @@ def process_image(image):
 
     for x in range(width):
         for y in range(height):
-            px = image.getpixel((x,y))
+            px = image.getpixel((x, y))
 
-            new_image.putpixel((x, y), px)
+            pxnew = int(px)
+
+            new_image.putpixel((x, y), pxnew)
 
     return new_image
 
